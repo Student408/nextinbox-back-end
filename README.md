@@ -1,3 +1,14 @@
+---
+title: NextInBox
+colorFrom: orange
+colorTo: orange
+sdk: docker
+pinned: true
+short_description: Email Management NextInBox API
+thumbnail: >-
+  https://cdn-uploads.huggingface.co/production/uploads/663de91ee8b79b3f9e74461e/sQ_AHOKdSuOrfe7o8Jo31.png
+---
+
 # NextInBox Backend
 
 ## Prerequisites
