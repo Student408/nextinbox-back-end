@@ -1,7 +1,7 @@
 ---
 title: NextInBox
-colorFrom: orange
-colorTo: orange
+colorFrom: red
+colorTo: red
 sdk: docker
 pinned: true
 short_description: Email Management NextInBox API
