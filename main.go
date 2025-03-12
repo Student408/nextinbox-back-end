@@ -56,7 +56,9 @@ type EmailResponse struct {
 }
 
 func NewMailService() (*MailService, error) {
-	err := godotenv.Load()
+	if err := godotenv.Load(); err != nil {
+		return nil, fmt.Errorf("error loading .env file: %v", err)
+	}
 
 	conf := supabase.Config{
 		ApiKey:     os.Getenv("SUPABASE_SERVICE_ROLE_KEY"),
