@@ -16,7 +16,6 @@ import (
 	"net/smtp"
 
 	"github.com/gorilla/mux"
-	"github.com/joho/godotenv"
 	supabase "github.com/lengzuo/supa"
 	"github.com/rs/cors"
 )
@@ -56,7 +55,6 @@ type EmailResponse struct {
 }
 
 func NewMailService() (*MailService, error) {
-	err := godotenv.Load()
 
 	conf := supabase.Config{
 		ApiKey:     os.Getenv("SUPABASE_SERVICE_ROLE_KEY"),
@@ -494,7 +492,7 @@ func main() {
 
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8080"
+		port = "7860"
 	}
 
 	log.Printf("Server starting on port %s", port)
