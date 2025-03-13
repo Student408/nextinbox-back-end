@@ -29,7 +29,7 @@ COPY --from=builder /app/nextinbox .
 COPY doc.html doc.html
 
 # Expose the port your app listens on
-EXPOSE 8080
+EXPOSE 7860
 
 # Command to run the application
 CMD ["./nextinbox"]
